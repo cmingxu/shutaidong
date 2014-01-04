@@ -35,4 +35,6 @@ public class ShutaidongHttpClient {
     public static JSONObject syncConfig(){
         return null;
     }
+
+    public static void postKicks(ArrayList<Kick> kicks){}
 }
