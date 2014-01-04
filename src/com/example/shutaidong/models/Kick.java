@@ -1,5 +1,7 @@
 package com.example.shutaidong.models;
 
+import com.activeandroid.Model;
+
 /**
  * Created with IntelliJ IDEA.
  * User: xcm
@@ -7,5 +9,5 @@ package com.example.shutaidong.models;
  * Time: 8:52 AM
  * To change this template use File | Settings | File Templates.
  */
-public class Kick {
+public class Kick extends Model {
 }

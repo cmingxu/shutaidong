@@ -8,4 +8,12 @@ package com.example.shutaidong.models;
  * To change this template use File | Settings | File Templates.
  */
 public class User {
+    public String user_name;
+    public String password;
+
+    public String loginErrorMessage;
+
+    public static boolean authentication(User user){
+        return true;
+    }
 }
