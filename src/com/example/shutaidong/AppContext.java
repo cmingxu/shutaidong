@@ -29,7 +29,6 @@ public class AppContext extends Application {
 
     public AppContext() {
         super();
-        appConfig = AppConfig.getAppConfig(getApplicationContext());
     }
 
     public void login(User current_user){
