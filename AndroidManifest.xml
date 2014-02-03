@@ -17,10 +17,15 @@
         <activity android:name=".Base"/>
         <activity android:name=".views.Setting"/>
         <activity android:name=".views.Main"/>
-
+        <activity android:name=".views.DataSync"/>
 
 
         <meta-data android:name="AA_DB_NAME" android:value="shutaidong.db" />
         <meta-data android:name="AA_DB_VERSION" android:value="5" />
     </application>
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+
 </manifest>

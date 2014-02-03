@@ -6,10 +6,39 @@
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Scan Bluetooth Devices"
-            android:id="@+id/scanBtn"/>
-    <ListView
+            android:text="蓝牙传输数据"
+            android:id="@+id/data_sync" android:layout_alignParentLeft="true" android:layout_marginLeft="61dp"
+            android:layout_alignParentTop="true" android:layout_alignParentStart="false"
+            android:onClick="blueToothDataSync"/>
+    <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/blueToothDevices"/>
+            android:text="图表展示"
+            android:id="@+id/chart_show"
+            android:onClick="chartShow" android:layout_alignParentLeft="true" android:layout_marginLeft="7dp"
+            android:layout_alignParentTop="true" android:layout_marginTop="66dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:id="@+id/register"
+            android:onClick="registration"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="154dp"
+            android:layout_below="@+id/chart_show"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:text="登陆"
+            android:id="@+id/login"
+            android:onClick="login"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="139dp"
+            android:layout_below="@+id/data_sync"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传至服务器"
+            android:id="@+id/upload_to_server"
+            android:onClick="uploadToServer"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="26dp" android:layout_alignParentTop="true"
+            android:layout_marginTop="167dp"/>
 </RelativeLayout>

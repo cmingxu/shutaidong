@@ -1,7 +1,9 @@
 package com.example.shutaidong;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import com.example.shutaidong.views.Main;
 
 public class Splash extends Activity {
     /**
@@ -11,5 +13,11 @@ public class Splash extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+        Intent intent = new Intent();
+        intent.setClass(Splash.this, Main.class);
+        startActivity(intent);
     }
+
+
 }

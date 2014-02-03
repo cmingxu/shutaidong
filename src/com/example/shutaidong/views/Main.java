@@ -11,7 +11,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 import com.example.shutaidong.R;
+
+import java.util.MissingFormatArgumentException;
+import java.util.Set;
 
 /**
  * Created with IntelliJ IDEA.
@@ -21,43 +25,26 @@ import com.example.shutaidong.R;
  * To change this template use File | Settings | File Templates.
  */
 public class Main extends Activity {
-    private Button discoverButton;
-    public void onCreate(Bundle savedInstanceState) {
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        discoverButton = (Button)findViewById(R.id.scanBtn);
-        discoverButton.setOnClickListener(new Button.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Intent discoverableIntent = new
-                        Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE);
-                discoverableIntent.putExtra(BluetoothAdapter.EXTRA_DISCOVERABLE_DURATION, 300);
-                startActivity(discoverableIntent);
-            }
-        });
-
-
-        // Register the BroadcastReceiver
-        IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
-        registerReceiver(mReceiver, filter);
     }
 
 
-    // Create a BroadcastReceiver for ACTION_FOUND
-    private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
-        public void onReceive(Context context, Intent intent) {
-            String action = intent.getAction();
-            // When discovery finds a device
+    public void blueToothDataSync(View view){
+        redirctTo(DataSync.class);
+    }
+    public void login(View view){}
+    public void registration(View view){}
+    public void uploadToServer(View view){}
+    public void chartShow(View view){}
 
-            if (BluetoothDevice.ACTION_FOUND.equals(action)) {
-                // Get the BluetoothDevice object from the Intent
-                BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-                // Add the name and address to an array adapter to show in a ListView
-                Log.d("device", device.getAddress() + ":" + device.getAddress());
-//                mArrayAdapter.add(device.getName() + "\n" + device.getAddress());
-            }
-        }
-    };
+
+    private void redirctTo(Class clazz){
+        Intent intent = new Intent();
+        intent.setClass(Main.this, clazz);
+        startActivity(intent);
+    }
 }
