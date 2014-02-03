@@ -9,12 +9,13 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ListView;
+import android.view.ViewGroup;
+import android.widget.*;
 import com.example.shutaidong.R;
 
+import java.util.ArrayList;
 import java.util.Set;
 
 /**
@@ -32,6 +33,7 @@ public class DataSync extends Activity {
     private ImageButton mImageButton;
     private ListView mDeviceListView;
     private DeviceListAdapter mDeviceListAdapter = null;
+    private ArrayList<BluetoothDevice> mDevices;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,7 +57,9 @@ public class DataSync extends Activity {
 
 //        mImageButton = (ImageButton)findViewById(R.id.actionButton);
         mDeviceListView = (ListView)findViewById(R.id.deviceListView);
-        mDeviceListAdapter = new DeviceListAdapter(null, DataSync.this);
+        mDevices = new ArrayList<BluetoothDevice>();
+        mDeviceListAdapter = new DeviceListAdapter(mDevices, DataSync.this);
+
         mDeviceListView.setAdapter(mDeviceListAdapter);
 //        mDeviceListView.setEmptyView();
 //        mImageButton.setOnClickListener(new OnButtonClickListener());
@@ -130,7 +134,54 @@ public class DataSync extends Activity {
 
 
     private void newDeviceFound(BluetoothDevice device){
-        mDeviceListAdapter.add(device);
+        mDevices.add(device);
+        mDeviceListAdapter = new DeviceListAdapter(mDevices, DataSync.this);
+
+        mDeviceListView.setAdapter(mDeviceListAdapter);
         mDeviceListView.invalidate();
     }
+
+
+    private class DeviceListAdapter extends BaseAdapter{
+        ArrayList<BluetoothDevice> devices = null;
+        Context context;
+
+        public DeviceListAdapter(ArrayList<BluetoothDevice> devices, Context context) {
+            this.devices = devices;
+            this.context = context;
+            if (this.devices == null) {
+                this.devices = new ArrayList<BluetoothDevice>();
+            }
+        }
+
+        public void add(BluetoothDevice device){
+            devices.add(device);
+        }
+
+        @Override
+        public int getCount() {
+            return devices.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return devices.get(position);
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return 0;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            BluetoothDevice device = devices.get(position);
+            LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            View view = inflater.inflate(R.layout.device_list_item, null);
+            TextView editText = (TextView)view.findViewById(R.id.device_name);
+            editText.setText(device.getName());
+            return view;
+        }
+    }
+
 }

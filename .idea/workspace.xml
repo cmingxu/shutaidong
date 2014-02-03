@@ -24,23 +24,13 @@
     </option>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="DataSyncActivity" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef576f38-c1db-4231-8aef-2ce865725ba0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_down.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/shutaidong/views/DataSync.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/shutaidong/views/DeviceListAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/data_sync.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/device_list_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/imagebutton_selector.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/shutaidong/views/Main.java" afterPath="$PROJECT_DIR$/src/com/example/shutaidong/views/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/shutaidong/Splash.java" afterPath="$PROJECT_DIR$/src/com/example/shutaidong/Splash.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/example/shutaidong/views/DeviceListAdapter.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/shutaidong/views/DataSync.java" afterPath="$PROJECT_DIR$/src/com/example/shutaidong/views/DataSync.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/data_sync.xml" afterPath="$PROJECT_DIR$/res/layout/data_sync.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shutaidong.iws" />
@@ -64,7 +54,7 @@
     <file path="/Main.java" changelist="ef576f38-c1db-4231-8aef-2ce865725ba0" time="1391400638304" ignored="false" />
     <file path="/strings.xml" changelist="ef576f38-c1db-4231-8aef-2ce865725ba0" time="1391395651017" ignored="false" />
     <file path="/Splash.java" changelist="ef576f38-c1db-4231-8aef-2ce865725ba0" time="1391397817065" ignored="false" />
-    <file path="/DataSync.java" changelist="ef576f38-c1db-4231-8aef-2ce865725ba0" time="1391403266087" ignored="false" />
+    <file path="/DataSync.java" changelist="ef576f38-c1db-4231-8aef-2ce865725ba0" time="1391404614102" ignored="false" />
     <file path="/data_sync.xml" changelist="ef576f38-c1db-4231-8aef-2ce865725ba0" time="1391402861376" ignored="false" />
     <file path="/imagebutton_selector.xml" changelist="ef576f38-c1db-4231-8aef-2ce865725ba0" time="1391401560271" ignored="false" />
     <file path="/DeviceListAdapter.java" changelist="ef576f38-c1db-4231-8aef-2ce865725ba0" time="1391402595868" ignored="false" />
@@ -140,25 +130,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataSync.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DataSync.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/shutaidong/views/DataSync.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="39" selection-start="2066" selection-end="2066" vertical-scroll-proportion="0.76878613">
+            <state line="11" column="71" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3488#4187#0" expanded="true" />
-                <element signature="e#4176#4177#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeviceListAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/shutaidong/views/DeviceListAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="38" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3618#4317#0" expanded="true" />
+                <element signature="e#4306#4307#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -178,13 +156,22 @@
       </file>
       <file leaf-file-name="data_sync.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/data_sync.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="21" selection-start="444" selection-end="853" vertical-scroll-proportion="-2.7692308">
+          <provider editor-type-id="text-editor">
+            <state line="20" column="21" selection-start="443" selection-end="852" vertical-scroll-proportion="-5.76">
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
+          <provider selected="true" editor-type-id="android-designer">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Register.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/shutaidong/views/Register.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="21" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -206,22 +193,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/shutaidong/views/Login.java">
+      <file leaf-file-name="Setting.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/shutaidong/views/Setting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
+            <state line="16" column="1" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Splash.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/shutaidong/Splash.java">
+      <file leaf-file-name="Login.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/shutaidong/views/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="56" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="16" column="53" selection-start="391" selection-end="391" vertical-scroll-proportion="0.30546623">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -266,8 +251,8 @@
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/drawable-mdpi/imagebutton_selector.xml" />
         <option value="$PROJECT_DIR$/res/layout/device_list_item.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/shutaidong/views/DeviceListAdapter.java" />
         <option value="$PROJECT_DIR$/res/layout/data_sync.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/shutaidong/views/DeviceListAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/example/shutaidong/views/DataSync.java" />
       </list>
     </option>
@@ -521,7 +506,7 @@
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="AndroidLayoutSelectedEditor" value="text-editor" />
+    <property name="AndroidLayoutSelectedEditor" value="android-designer" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
@@ -739,7 +724,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1104" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5792683" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5792683" order="-1" side_tool="false" content_ui="tabs" />
@@ -749,16 +734,16 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39939025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5315041" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4207317" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4207317" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4207317" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32283884" sideWeight="0.5792683" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32283884" sideWeight="0.5792683" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32723576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -841,20 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/shutaidong/views/Setting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="1" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/shutaidong/views/Register.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/shutaidong/AppContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="18" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
@@ -872,13 +843,6 @@
     <entry file="file://$USER_HOME$/Downloads/adt-bundle-mac-x86_64-20131030/sdk/sources/android-17/android/app/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="878" column="19" selection-start="40579" selection-end="40579" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/shutaidong/views/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -923,15 +887,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/shutaidong/views/DeviceListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="38" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider editor-type-id="text-editor">
         <state line="5" column="4" selection-start="207" selection-end="207" vertical-scroll-proportion="-3.8">
@@ -943,23 +898,43 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/data_sync.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="21" selection-start="444" selection-end="853" vertical-scroll-proportion="-2.7692308">
+      <provider editor-type-id="text-editor">
+        <state line="20" column="21" selection-start="443" selection-end="852" vertical-scroll-proportion="-5.76">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
+      <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/shutaidong/views/DataSync.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="39" selection-start="2066" selection-end="2066" vertical-scroll-proportion="0.76878613">
+        <state line="11" column="71" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3488#4187#0" expanded="true" />
-            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#3618#4317#0" expanded="true" />
+            <element signature="e#4306#4307#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/shutaidong/views/Setting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="1" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/shutaidong/views/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="21" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/shutaidong/views/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="53" selection-start="391" selection-end="391" vertical-scroll-proportion="0.30546623">
+          <folding />
         </state>
       </provider>
     </entry>
