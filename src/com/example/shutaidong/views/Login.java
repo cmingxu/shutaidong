@@ -2,6 +2,7 @@ package com.example.shutaidong.views;
 
 import android.os.Bundle;
 import com.example.shutaidong.Base;
+import com.example.shutaidong.R;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,5 +14,6 @@ import com.example.shutaidong.Base;
 public class Login extends Base {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.login);
     }
 }

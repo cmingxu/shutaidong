@@ -36,8 +36,12 @@ public class Main extends Activity {
     public void blueToothDataSync(View view){
         redirctTo(DataSync.class);
     }
-    public void login(View view){}
-    public void registration(View view){}
+    public void login(View view){
+        redirctTo(Login.class);
+    }
+    public void registration(View view){
+        redirctTo(Register.class);
+    }
     public void uploadToServer(View view){}
     public void chartShow(View view){}
 
